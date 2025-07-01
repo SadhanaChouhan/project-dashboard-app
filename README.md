@@ -3,12 +3,13 @@
 
 This is a responsive **Project Dashboard Application** built with **Angular**.
 It allows users to create, view, and manage projects by entering key details such as project name, image URL, and description.
+Adimn can add clients review.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Add new projects via a dynamic form
+- ✅ Add new projects and clients via a dynamic form
 - 🖼️ Display project cards with name, image, and description
 - 📱 Fully responsive design
 - 🔒 Form validation and error handling
