@@ -1,0 +1,10 @@
+<div class="contact-section">
+  <div class="contact-container" *ngIf="contacts">
+    <div class="contact-card" *ngFor="let contact of contacts">
+      <h4 class="name">{{ contact.fullName }}</h4>
+      <p class="email">{{ contact.email }}</p>
+      <p class="email">{{ contact.number }}</p>
+      <p class="email">{{ contact.city }}</p>
+    </div>
+  </div>
+</div>

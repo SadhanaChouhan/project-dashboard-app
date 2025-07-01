@@ -1,0 +1,58 @@
+<div>
+
+    <section class="hero">
+  <div class="hero-text">
+    <h1>Consultation,<br>Design,<br> & Marketing</h1>
+  </div>
+ 
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container ">
+<h1>Get a Free Consultation</h1>
+  <div class="form-group">
+    <input type="text" formControlName="fullName" class="form-control" placeholder="Full Name" required />
+    <div *ngIf="form.get('fullName')?.invalid && form.get('fullName')?.touched" class="error">
+      Name is required
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input type="email" formControlName="email" class="form-control"  placeholder="Email Id" required />
+    <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="error">
+      Email is required
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input type="number" formControlName="mobile" class="form-control" placeholder="Mobile Nmber" required />
+    <div *ngIf="form.get('mobile')?.invalid && form.get('mobile')?.touched" class="error">
+      Number is required
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input type="text" formControlName="city" class="form-control" placeholder="City" required />
+    <div *ngIf="form.get('city')?.invalid && form.get('city')?.touched" class="error">
+      City is required
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid" class="submit-btn">Get Quick Quote</button>
+</form>
+
+</section>
+</div>
+
+<div>
+  <div>
+    <app-why-us></app-why-us>
+  </div>
+  <div>
+    <app-about-us></app-about-us>
+  </div>
+  <div>
+  <app-projects></app-projects>
+  </div>
+  <div>
+    <app-clients></app-clients>
+
+  </div>
+</div>

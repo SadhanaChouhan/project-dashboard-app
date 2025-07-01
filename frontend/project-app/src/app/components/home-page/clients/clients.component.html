@@ -1,0 +1,13 @@
+
+<div class="clients-section">
+  <h2 class="title">Happy Clients</h2>
+  <div class="clients-container" *ngIf="clients">
+    <div class="client-card" *ngFor="let client of clients">
+      <img [src]="client.imageUrl" alt="{{ client.name }}" class="client-image" />
+      <p class="feedback">"{{ client.description}}"</p>
+      <h4 class="name">{{ client.name }}</h4>
+      <p class="role">{{ client.designation }}</p>
+    </div>
+  </div>
+</div>
+

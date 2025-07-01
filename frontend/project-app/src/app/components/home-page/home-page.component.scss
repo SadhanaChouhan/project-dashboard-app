@@ -1,0 +1,45 @@
+.form-container {
+  background-color: #113d6b;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  color: white;
+}
+.form-container h2 {
+  margin-bottom: 20px;
+}
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+background-image: url("/assets/img/main.svg");
+
+
+}
+.hero-text {
+  max-width: 50%;
+
+}
+.hero-text h1 {
+  font-size: 3rem;
+   color: white;
+  margin-bottom: 20px;
+}
